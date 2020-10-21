@@ -1,0 +1,113 @@
+.prizrak-site-wrappers {
+    margin: 20px 0;
+}
+
+/*.prizrak-main .prizrak-single .prizrak-single-header .prizrak-single-header-excerpt {
+    font-style: italic;
+}
+.prizrak-main .prizrak-loop .prizrak-loop-post .prizrak-loop-post-meta {
+    line-height: 1.15;
+}
+.prizrak-main .prizrak-loop .prizrak-loop-post .prizrak-loop-post-title {
+    line-height: 1.25;
+    word-break: break-word;
+}
+.prizrak-main .prizrak-loop .prizrak-loop-post .prizrak-loop-post-excerpt {
+    line-height: 1.25;
+    font-style: italic;
+    word-wrap: break-word;
+}
+.prizrak-main .prizrak-loop .prizrak-loop-post .prizrak-loop-post-read-more {
+    margin-top: 5px;
+}*/
+
+
+.prizrak-loop-pagination {
+    margin-top: 20px;
+}
+
+
+.prizrak-comments .prizrak-comments-list .prizrak-page-comments-list-item {
+    margin-bottom: 10px;
+}
+
+.prizrak-comments .prizrak-comments-list .prizrak-page-comments-list-item:last-child {
+    margin-bottom: 0;
+}
+
+.prizrak-comments .prizrak-comments-list .prizrak-page-comments-list-item .children {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.prizrak-comments .prizrak-comments-list .prizrak-page-comments-list-item > .prizrak-comment-wrapper {
+    display: flex;
+    margin: -5px;
+}
+
+.prizrak-comments .prizrak-comments-list .prizrak-page-comments-list-item > .prizrak-comment-wrapper .prizrak-comment-avatar {
+    width: 80px;
+    min-width: 80px;
+    padding: 5px;
+}
+
+.prizrak-comments .prizrak-comments-list .prizrak-page-comments-list-item > .prizrak-comment-wrapper .prizrak-comment {
+    width: 100%;
+    padding: 5px;
+}
+
+
+.prizrak-widget-area > * {
+    margin-bottom: 20px;
+}
+
+.prizrak-widget-area > *:last-child {
+    margin-bottom: 0;
+}
+
+.prizrak-widget-area .widget .widget-header {
+    margin-bottom: 10px;
+}
+
+.prizrak-widget-area .widget.widget_calendar table {
+    width: 100%;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+    .prizrak-layout-content {
+        flex-wrap: nowrap;
+    }
+
+    .prizrak-layout-content .prizrak-main {
+        max-width: 75%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .prizrak-comments .prizrak-comments-list .prizrak-page-comments-list-item {
+        margin-bottom: 15px;
+    }
+
+    .prizrak-comments .prizrak-comments-list .prizrak-page-comments-list-item .children {
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+
+    .prizrak-comments .prizrak-comments-list .prizrak-page-comments-list-item > .prizrak-comment-wrapper .prizrak-comment-avatar {
+        width: 100px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}

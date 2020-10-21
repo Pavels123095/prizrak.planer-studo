@@ -1,0 +1,95 @@
+.prizrak-header-wrapper {
+    background-image: url('../img/prizrak-back-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.prizrak-header-wrapper a {
+    color: #d0f4fd;
+}
+.prizrak-header-wrapper .prizrak-times {
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+}
+.prizrak-header-wrapper .prizrak-times a time {
+    font-family: "Gothic Elder italic";
+    font-style: italic;
+    letter-spacing: 0.3em;
+}
+.prizrak-header-wrapper .prizrak-times .prizrak-title-website .prizrak-title,
+.prizrak-header-wrapper .prizrak-times .prizrak-title-website .prizrak-title a {
+    font-size: 24px;
+    font-family: "Gothic Elder normal";
+    text-transform: uppercase;
+    color: #f4f4f4;
+}
+.prizrak-header-wrapper .prizrak-times .prizrak-title-website .prizrak-title a:hover {
+    color: #a71d1d;
+}
+.prizrak-header-wrapper .prizrak-times .prizrak-time a {
+    font-family: "Gothic Elder italic";
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 1%;
+    padding: 5px 9px;
+    color: #ffffff;
+    background-color: #a71d1d;
+    box-shadow: 2px 0px 10px 5px #f4f4f4;
+}
+.prizrak-header-wrapper .prizrak-times .prizrak-time a:hover {
+    color: #fff;
+    font-weight: bolder;
+    box-shadow: 2px 0px 10px 5px #8bddf1;
+}
+.prizrak-additional-wrapper .prizrak-additional .prizrak-additional-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.prizrak-header-wrapper .prizrak-times .prizrak-social-group ul li a:hover {
+    color: #a71d1d;
+}
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 991px) {
+    .prizrak-additional-wrapper .prizrak-additional .prizrak-additional-content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .prizrak-header-wrapper .prizrak-times {
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .prizrak-header-wrapper .prizrak-times .prizrak-time {
+        width: 45%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .prizrak-header-wrapper .prizrak-times .prizrak-social-group {
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .prizrak-header-wrapper .prizrak-times .prizrak-title-website {
+        width: 25%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+}
