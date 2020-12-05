@@ -61,6 +61,7 @@ class Prizrak_Footer  {
 
     public function prizrak_common_js() {
         $suffix = (WP_DEBUG === true) ? '' : '.min';
+        wp_enqueue_script('prizrak-slick', get_template_directory_uri() . '/assets/lib/slick' .$suffix . '.js' , array('jQuery'),wp_get_theme()->get( 'Version' ), true);
         wp_enqueue_script('prizrak-common', get_template_directory_uri() . '/assets/js/common' .$suffix . '.js' , array('jQuery'),wp_get_theme()->get( 'Version' ), true);
     }
 

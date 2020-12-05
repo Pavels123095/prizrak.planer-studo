@@ -25,24 +25,13 @@ if ( ! defined( 'ABSPATH' ) ) {
                 </div>
                 <div class="prizrak-time prizrak-layout-column">
                     <a href="javascript.void(0);">
-                        <time><?php echo strftime( '%A,  %B  %d,  %G' ); ?></time>
+                        <time> Сегодня: <?php echo strftime( '%A' ); ?></time> 
+                        <time> Месяц:  <?php echo strftime(' %B '); ?> </time>
+                        <time> Число и год: <?php echo strftime(' %d,  %G'); ?></time>
                     </a>
                 </div>
                 <div class="prizrak-social-group prizrak-layout-column">
                     <?php echo prizrak_template_social('prizrak-layout-inline-template'); ?>
-                </div>
-            </div>
-            <div class="prizrak-additional-wrapper">
-                <div class="prizrak-additional prizrak-layout-container">
-                    <div class="prizrak-additional-content prizrak-layout-row">
-                        <div class="prizrak-layout-logos prizrak-layout-column">
-                            <a class="prizrak-logos-title" href="<?php echo esc_html('/'); ?>">  
-                                <?php if (!empty(has_custom_logo())):
-                                     echo has_custom_logo(); 
-                                endif; ?>
-                            </a>  
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="prizrak-navigation-wrapper">
@@ -52,7 +41,6 @@ if ( ! defined( 'ABSPATH' ) ) {
                             <?php 
                                 wp_nav_menu( array(
                                     'theme_location'  => 'header_primary_menu',
-                                    'menu'            => '', 
                                     'container'       => false,
                                     'menu_class'      => 'prizrak-header-primary-menu', 
                                     'before'          => '',
@@ -60,9 +48,6 @@ if ( ! defined( 'ABSPATH' ) ) {
                                     'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                                 ));
                             ?>
-                        </div>
-                        <div class="prizrak-navigation-searchform prizrak-layout-column">
-                            <?php echo get_search_form(); ?>
                         </div>
                     </div>
                 </div>

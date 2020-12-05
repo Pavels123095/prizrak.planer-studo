@@ -1,7 +1,7 @@
 <?php get_header(); ?>
     <div class="prizrak-layout-content prizrak-layout-row">
 
-        <main class="prizrak-main prizrak-main-reported prizrak-layout-column">
+        <main class="prizrak-main-page prizrak-main prizrak-main-reported prizrak-layout-column">
             
         </main>
 

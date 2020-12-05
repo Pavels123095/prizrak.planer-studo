@@ -17,7 +17,14 @@
                     <div class="prizrak-footer-copyright-wrapper">
                         <div class="prizrak-footer-copyright prizrak-layout-container">
                             <div class="prizrak-footer-copyright-content prizrak-layout-row">
-
+                                <div class="prizrak-footer-copyright-text prizak-layout-column">
+                                    <span><?php echo get_theme_mod('text-copyrights'); ?></span>
+                                    <span>&copy; <?php echo date("Y"); ?> - 
+                                        <a class="prizrak-footer-link" href="<?php echo esc_html('/'); ?>">
+                                            <?php bloginfo('title'); ?></a> - <?php bloginfo('description'); ?>
+                                        </a>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>

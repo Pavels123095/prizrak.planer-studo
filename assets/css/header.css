@@ -1,7 +1,4 @@
 .prizrak-header-wrapper {
-    background-image: url('../img/prizrak-back-header.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     color: #fff;
 }
 .prizrak-header-wrapper a {
@@ -14,8 +11,9 @@
 }
 .prizrak-header-wrapper .prizrak-times a time {
     font-family: "Gothic Elder italic";
-    font-style: italic;
-    letter-spacing: 0.3em;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: 16px;
 }
 .prizrak-header-wrapper .prizrak-times .prizrak-title-website .prizrak-title,
 .prizrak-header-wrapper .prizrak-times .prizrak-title-website .prizrak-title a {
@@ -31,8 +29,12 @@
     font-family: "Gothic Elder italic";
     font-weight: bold;
     font-size: 16px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border-radius: 1%;
+    width: auto;
+    text-align: center;
     padding: 5px 9px;
     color: #ffffff;
     background-color: #a71d1d;
@@ -43,12 +45,39 @@
     font-weight: bolder;
     box-shadow: 2px 0px 10px 5px #8bddf1;
 }
+.prizrak-header-wrapper .prizrak-times .prizrak-time a:hover time {
+    color: #fffa3f;
+}
 .prizrak-additional-wrapper .prizrak-additional .prizrak-additional-content {
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-flow: row wrap;
 }
 .prizrak-header-wrapper .prizrak-times .prizrak-social-group ul li a:hover {
     color: #a71d1d;
+}
+
+
+
+.prizrak-navigation-wrapper .prizrak-navigation .prizrak-navigation-content {
+    background: linear-gradient(#ff0000f0, #a71d1d);
+}
+.prizrak-navigation-content .prizrak-navigation-menu .prizrak-header-primary-menu {
+    border: 1px solid #a71d1d;
+}
+.prizrak-navigation-content .prizrak-navigation-menu .prizrak-header-primary-menu .menu-item a {
+    width: 100%;
+    display: block;
+    padding: 10px 15px;
+    border-left: 1px solid #a80505;
+    border-right: 1px solid #a80505;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "Gothic Elder normal";
+    background: linear-gradient(#ff0000f0, #a80505);
+}
+.prizrak-navigation-content .prizrak-navigation-menu .prizrak-header-primary-menu .menu-item a:hover,
+.prizrak-navigation-content .prizrak-navigation-menu .prizrak-header-primary-menu .current-menu-item a {
+    background: linear-gradient(#ff0000 , #a80505 , #a71d1d, #ff0000f0 );
 }
 @media only screen and (min-width: 480px) {
 
@@ -59,37 +88,49 @@
 }
 
 @media only screen and (min-width: 991px) {
-    .prizrak-additional-wrapper .prizrak-additional .prizrak-additional-content {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-    }
 
-    .prizrak-header-wrapper .prizrak-times {
+    .prizrak-site-container .prizrak-header-wrapper .prizrak-times {
         align-items: center;
         justify-content: space-between;
         flex-wrap: nowrap;
     }
-    .prizrak-header-wrapper .prizrak-times .prizrak-time {
+    .prizrak-site-container .prizrak-header-wrapper .prizrak-times > .prizrak-time {
         width: 45%;
-        margin: 0 auto;
+        margin: 0 10px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .prizrak-header-wrapper .prizrak-times .prizrak-social-group {
+    .prizrak-site-container .prizrak-header-wrapper .prizrak-times > .prizrak-time a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: auto;
+    }
+    .prizrak-site-container .prizrak-header-wrapper .prizrak-times > .prizrak-time a time {
+        margin: 0 3px;
+    }
+    .prizrak-site-container .prizrak-header-wrapper .prizrak-times > .prizrak-social-group {
         width: 25%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
     }
-    .prizrak-header-wrapper .prizrak-times .prizrak-title-website {
+    .prizrak-site-container .prizrak-header-wrapper .prizrak-times > .prizrak-title-website {
         width: 25%;
         text-align: center;
+    }
+
+    .prizrak-navigation-wrapper .prizrak-navigation .prizrak-navigation-content .prizrak-navigation-menu .prizrak-header-primary-menu {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-flow: row nowrap;
     }
 }
 
 @media only screen and (min-width: 1024px) {
-
+    .prizrak-navigation-wrapper {
+        margin-top: 50px;
+    }
 }

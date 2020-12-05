@@ -21,6 +21,7 @@ class Prizrak_Header {
     public function prizrak_header_style() {
         $suffix = (WP_DEBUG === true) ? '' : '.min';
         wp_enqueue_style('prizrak-header', get_template_directory_uri() . '/assets/css/header' .$suffix . '.css',array(),wp_get_theme()->get( 'Version'));
+        wp_enqueue_style('prizrak-style', get_template_directory_uri() . '/assets/css/style' .$suffix . '.css',array(),wp_get_theme()->get( 'Version'));
     }
 
 }

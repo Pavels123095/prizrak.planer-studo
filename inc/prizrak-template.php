@@ -52,6 +52,8 @@
     function prizrak_fontawesome() {
         $suffix = (WP_DEBUG === true) ? '' : '.min';
         wp_enqueue_style('prizrak-fontawesome', get_template_directory_uri() .'/assets/lib/fontawesome/css/all' .$suffix . '.css',array(),wp_get_theme()->get( 'Version'));
+        wp_enqueue_style('prizrak-slick', get_template_directory_uri() . '/assets/lib/slick' .$suffix . '.css',array(),wp_get_theme()->get( 'Version'));
+        wp_enqueue_style('prizrak-slick-theme', get_template_directory_uri() . '/assets/lib/slick-theme' .$suffix . '.css',array(),wp_get_theme()->get( 'Version'));
     }
 
 ?>

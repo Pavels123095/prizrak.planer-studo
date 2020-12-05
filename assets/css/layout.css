@@ -48,6 +48,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     line-height: 1;
+    background: #010810 url('../img/background.jpg') top center no-repeat;
 }
 
 ol, ul {
